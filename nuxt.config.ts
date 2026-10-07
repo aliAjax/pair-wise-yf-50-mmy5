@@ -1,6 +1,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   compatibilityDate: "2025-07-15",
+  // 离线现场工具：依赖 localStorage 与浏览器在线状态，采用纯客户端渲染
+  ssr: false,
   modules: ["@pinia/nuxt", "@vueuse/nuxt", "@nuxtjs/i18n"],
   css: ["~/assets/main.css"],
   i18n: {
