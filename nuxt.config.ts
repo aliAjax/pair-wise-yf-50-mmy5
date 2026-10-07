@@ -1,4 +1,6 @@
 export default defineNuxtConfig({
+  // 纯离线采集前端；naive-ui 的依赖（vueuc）为 CommonJS，SSR 的 ESM 互操作不兼容，整页客户端渲染
+  ssr: false,
   devtools: { enabled: false },
   compatibilityDate: "2025-07-15",
   modules: ["@pinia/nuxt", "@vueuse/nuxt", "@nuxtjs/i18n"],
